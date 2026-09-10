@@ -1,0 +1,179 @@
+.education-section {
+  min-height: calc(100vh - 80px);
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.82) !important;
+}
+
+[data-theme="dark"] .education-section {
+  background-color: rgba(15, 23, 42, 0.82) !important;
+}
+
+.education-section h1 {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  width: calc(50% - 3rem);
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-content h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .timeline-content h3 {
+  color: var(--color-primary-light);
+}
+
+.timeline-content .period {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+}
+
+.timeline-content .institution {
+  color: var(--color-text-body);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.timeline-content .description {
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .timeline-content .period {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.timeline-content ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+.timeline-content li {
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.timeline-content a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+[data-theme="dark"] .timeline-content a {
+  color: var(--color-text-muted-high);
+}
+
+[data-theme="dark"] .timeline-content a:hover {
+  color: var(--color-primary-light);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 0;
+  }
+
+  .timeline-content {
+    width: calc(100% - 3rem);
+    margin-left: 3rem !important;
+  }
+
+   .timeline-content::after {
+     display: none;
+   }
+}
+
+/* Dark mode card backgrounds over GIF */
+[data-theme="dark"] .timeline-content {
+  background-color: rgba(15, 23, 42, 0.92);
+}
+
+/* Dark mode arrow color matches card background */
+[data-theme="dark"] .timeline-item:nth-child(odd) .timeline-content::after {
+  border-right-color: rgba(15, 23, 42, 0.92);
+}
+
+[data-theme="dark"] .timeline-item:nth-child(even) .timeline-content::after {
+  border-left-color: rgba(15, 23, 42, 0.92);
+}
+
+[data-theme="dark"] .timeline::before {
+  background-color: var(--color-primary);
+}
+
+[data-theme="dark"] .timeline-item::before {
+  background-color: var(--color-accent);
+}

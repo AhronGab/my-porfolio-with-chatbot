@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ahron Gab Peloni Portfolio" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Ahron Gab Peloni</title>
+    <link
+      rel="icon"
+      href="profilepicture/profilepicture.jpg"
+      type="image/jpeg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/chatbot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .error-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        background: linear-gradient(
+          135deg,
+          var(--color-slate-900) 0%,
+          var(--color-slate-800) 100%
+        );
+        color: white;
+      }
+
+      .error-code {
+        font-size: clamp(6rem, 20vw, 12rem);
+        font-weight: 700;
+        line-height: 1;
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-accent)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1rem;
+      }
+
+      .error-title {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1rem;
+      }
+
+      .error-message {
+        font-size: 1.125rem;
+        color: var(--color-slate-300);
+        max-width: 500px;
+        margin-bottom: 2rem;
+      }
+
+      .error-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="error-section">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-message">
+        The page you're looking for doesn't exist or has been moved. Let's get
+        you back on track.
+      </p>
+      <div class="error-actions">
+        <a href="../index.html" class="btn btn-primary"
+          ><i class="fas fa-home"></i> Back to Home</a
+        >
+        <a href="about.html" class="btn btn-secondary"
+          ><i class="fas fa-user"></i> About Me</a
+        >
+      </div>
+    </main>
+    <script src="../js/chatbot.js"></script>
+  </body>
+</html>

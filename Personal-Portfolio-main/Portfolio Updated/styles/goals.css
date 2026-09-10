@@ -1,0 +1,118 @@
+.goals-section {
+  min-height: calc(100vh - 80px);
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.82) !important;
+}
+
+[data-theme="dark"] .goals-section {
+  background-color: rgba(15, 23, 42, 0.82) !important;
+}
+
+.goals-section h1 {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.goals-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.goals-category {
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.goals-category h2 {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.goals-category h2 i {
+  color: var(--color-accent);
+}
+
+[data-theme="dark"] .goals-category h2 {
+  color: var(--color-primary-light);
+}
+
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.goal-item {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.3s ease;
+}
+
+.goal-item:hover {
+  transform: translateY(-5px);
+}
+
+.goal-item h3 {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .goal-item h3 {
+  color: var(--color-primary-light);
+}
+
+.goal-item p {
+  color: var(--color-text-body);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-slate-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+[data-theme="dark"] .progress-bar {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress {
+  height: 100%;
+  width: var(--progress);
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .goals-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+[data-theme="dark"] .goals-category,
+[data-theme="dark"] .goal-item {
+  background-color: rgba(15, 23, 42, 0.92);
+}

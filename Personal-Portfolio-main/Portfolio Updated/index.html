@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ahron Gab Peloni - Web Developer & Tech Enthusiast. Portfolio showcasing projects, skills, education, and professional journey."
+    />
+    <meta
+      name="keywords"
+      content="Ahron Gab Peloni, Web Developer, Portfolio, Software Engineer, Information Technology"
+    />
+    <meta name="author" content="Ahron Gab Peloni" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2563eb" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ahrongabpeloni.dev/" />
+    <meta
+      property="og:title"
+      content="Ahron Gab Peloni - Web Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Web Developer & Tech Enthusiast. Crafting elegant solutions to complex problems."
+    />
+    <meta
+      property="og:image"
+      content="pages/profilepicture/profilepicture.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ahrongabpeloni.dev/" />
+    <meta
+      name="twitter:title"
+      content="Ahron Gab Peloni - Web Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Web Developer & Tech Enthusiast. Crafting elegant solutions to complex problems."
+    />
+    <meta
+      name="twitter:image"
+      content="pages/profilepicture/profilepicture.jpg"
+    />
+
+    <title>Ahron Gab Peloni - Web Developer & Tech Enthusiast</title>
+    <link
+      rel="icon"
+      href="pages/profilepicture/profilepicture.jpg"
+      type="image/jpeg"
+    />
+    <link rel="canonical" href="https://ahrongabpeloni.dev/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/chatbot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ahron Gab Peloni",
+        "jobTitle": "Web Developer",
+        "description": "Web Developer & Tech Enthusiast passionate about building scalable applications.",
+        "url": "https://ahrongabpeloni.dev/",
+        "image": "pages/profilepicture/profilepicture.jpg",
+        "sameAs": [
+          "https://github.com/AhronGab",
+          "https://www.facebook.com/ahronpeloni",
+          "https://www.instagram.com/ahrongab_"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Philippine Christian University"
+        }
+      }
+    </script>
+  </head>
+
+  <body class="page-transition">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-brand">Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active" aria-current="page"
+          >Home</a
+        >
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/education.html" class="nav-link">Education</a>
+        <a href="pages/goals.html" class="nav-link">Goals</a>
+        <a href="pages/hobbies.html" class="nav-link">Hobbies</a>
+        <a href="pages/gallery.html" class="nav-link">Gallery</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <main id="main-content" class="main-content">
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">
+              <span class="typewriter" id="typewriter"></span>
+            </h1>
+            <p class="hero-title">Web Developer & Tech Enthusiast</p>
+            <p class="hero-description">
+              Crafting elegant solutions to complex problems. Passionate about
+              building scalable applications and continuously learning emerging
+              technologies.
+            </p>
+            <div class="hero-cta">
+              <a href="pages/about.html" class="btn btn-primary"
+                >Explore My Journey</a
+              >
+              <a href="pages/gallery.html" class="btn btn-secondary"
+                >View Gallery</a
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="profile-frame">
+              <img
+                src="pages/profilepicture/profilepicture.jpg"
+                alt="Ahron Gab Peloni - Profile Picture"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <a href="#explore" aria-label="Scroll to explore section"
+            ><i class="fas fa-chevron-down"></i
+          ></a>
+        </div>
+      </section>
+
+      <section
+        id="explore"
+        class="about-section"
+        style="
+          padding: var(--space-24) var(--space-6);
+          text-align: center;
+          background-color: transparent;
+        "
+      >
+        <div class="container">
+          <h2
+            style="color: var(--color-primary); margin-bottom: var(--space-8)"
+          >
+            Explore My Portfolio
+          </h2>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              gap: var(--space-8);
+              max-width: 1200px;
+              margin: 0 auto;
+              text-align: left;
+            "
+          >
+            <a href="pages/about.html" class="preview-card stagger-item">
+              <i class="fas fa-user"></i>
+              <h3>About Me</h3>
+              <p>Learn about my background, skills, and experience.</p>
+              <span
+                class="btn btn-primary"
+                style="padding: var(--space-2) var(--space-4)"
+                >Read More</span
+              >
+            </a>
+            <a
+              href="pages/education.html"
+              class="preview-card stagger-item stagger-delay-1"
+            >
+              <i class="fas fa-graduation-cap"></i>
+              <h3>Education</h3>
+              <p>My academic journey and certifications.</p>
+              <span
+                class="btn btn-primary"
+                style="padding: var(--space-2) var(--space-4)"
+                >View</span
+              >
+            </a>
+            <a
+              href="pages/gallery.html"
+              class="preview-card stagger-item stagger-delay-2"
+            >
+              <i class="fas fa-images"></i>
+              <h3>Gallery</h3>
+              <p>Check out my projects and photos.</p>
+              <span
+                class="btn btn-primary"
+                style="padding: var(--space-2) var(--space-4)"
+                >Browse</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Ahron Gab Peloni</h3>
+            <p>Web Developer & Tech Enthusiast</p>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/education.html">Education</a>
+            <a href="pages/goals.html">Goals</a>
+            <a href="pages/hobbies.html">Hobbies</a>
+            <a href="pages/gallery.html">Gallery</a>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://github.com/AhronGab"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/ahronpeloni"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ahrongab_"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ahron-gab-peloni-ba6182405"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Ahron Gab Peloni. All rights reserved.</p>
+          <p class="footer-tagline">
+            Crafting elegant solutions to complex problems.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+      title="Scroll to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <button
+      class="theme-toggle"
+      aria-label="Toggle dark mode"
+      title="Toggle dark mode"
+    >
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

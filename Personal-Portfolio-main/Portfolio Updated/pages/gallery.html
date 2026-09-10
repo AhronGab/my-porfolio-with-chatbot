@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Photo gallery of Ahron Gab Peloni's projects and moments. Web Developer portfolio gallery."
+    />
+    <meta
+      name="keywords"
+      content="Ahron Gab Peloni, Portfolio Gallery, Projects, Photos"
+    />
+    <meta name="author" content="Ahron Gab Peloni" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gallery - Ahron Gab Peloni" />
+    <meta
+      property="og:description"
+      content="Photo gallery of projects and moments."
+    />
+    <meta property="og:image" content="profilepicture/profilepicture.jpg" />
+    <title>Gallery - Ahron Gab Peloni</title>
+    <link
+      rel="icon"
+      href="profilepicture/profilepicture.jpg"
+      type="image/jpeg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/gallery.css" />
+    <link rel="stylesheet" href="../styles/chatbot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-transition">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-brand">Portfolio</div>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="goals.html" class="nav-link">Goals</a>
+        <a href="hobbies.html" class="nav-link">Hobbies</a>
+        <a href="gallery.html" class="nav-link active" aria-current="page"
+          >Gallery</a
+        >
+      </div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <main id="main-content" class="main-content">
+      <section class="gallery-section">
+        <div class="container">
+          <h1>Photo Gallery</h1>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture1.jpg"
+                alt="Project screenshot 1"
+              />
+              <div class="overlay">
+                <div class="caption">Project Alpha</div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture2.jpg"
+                alt="Project screenshot 2"
+              />
+              <div class="overlay"><div class="caption">Project Beta</div></div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture3.jpg"
+                alt="Project screenshot 3"
+              />
+              <div class="overlay">
+                <div class="caption">Project Gamma</div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture4.jpg"
+                alt="Project screenshot 4"
+              />
+              <div class="overlay">
+                <div class="caption">Project Delta</div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture5.jpg"
+                alt="Project screenshot 5"
+              />
+              <div class="overlay">
+                <div class="caption">Project Epsilon</div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture6.jpg"
+                alt="Project screenshot 6"
+              />
+              <div class="overlay"><div class="caption">Project Zeta</div></div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture7.jpg"
+                alt="Project screenshot 7"
+              />
+              <div class="overlay"><div class="caption">Project Eta</div></div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="gallerypicture/picture8.jpg"
+                alt="Project screenshot 8"
+              />
+              <div class="overlay">
+                <div class="caption">Project Theta</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox" aria-label="Close lightbox">&times;</span>
+      <img id="lightbox-img" class="lightbox-content" alt="Enlarged view" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Ahron Gab Peloni</h3>
+            <p>Web Developer & Tech Enthusiast</p>
+          </div>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="goals.html">Goals</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://github.com/AhronGab"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/ahronpeloni"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ahrongab_"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ahron-gab-peloni-ba6182405"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Ahron Gab Peloni. All rights reserved.</p>
+          <p class="footer-tagline">
+            Crafting elegant solutions to complex problems.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+      title="Scroll to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <button
+      class="theme-toggle"
+      aria-label="Toggle dark mode"
+      title="Toggle dark mode"
+    >
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/chatbot.js"></script>
+  </body>
+</html>
